@@ -1,0 +1,15 @@
+services:
+  myapp:
+    container_name: ${container}
+    image: ${image}
+    ports:
+      - ${host}:8080
+    networks:
+      - myapp_network
+    volumes:
+      - myapp:/opt/divija/
+networks:
+  myapp_network:
+    driver: bridge
+volumes:
+  myapp:
