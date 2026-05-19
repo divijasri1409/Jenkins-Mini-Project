@@ -7,7 +7,7 @@ services:
     networks:
       - myapp_network
     volumes:
-      - myapp:/opt/divija/
+      - myapp: /opt/divija/
 networks:
   myapp_network:
     driver: bridge
